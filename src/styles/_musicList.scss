@@ -1,0 +1,14 @@
+.music-list {
+  .list-cover {
+    width: 100px;
+    border-radius: 100%;
+  }
+}
+@media screen and(max-width:'672px') {
+  .music-list {
+    margin: 1rem 0 !important;
+    h5 {
+      font-size: 1rem;
+    }
+  }
+}

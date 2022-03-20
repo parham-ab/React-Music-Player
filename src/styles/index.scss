@@ -1,0 +1,92 @@
+// CSS resets
+@import "~bootstrap/scss/bootstrap";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+}
+// styles
+@import "musicPlayer";
+@import "musicList";
+// background
+body {
+  color: #fff;
+  background: linear-gradient(
+    81deg,
+    #111,
+    rgb(33, 35, 36),
+    rgb(18, 17, 29),
+    rgb(30, 28, 49)
+  );
+  background-size: 800% 800%;
+
+  -webkit-animation: grad 50s ease infinite;
+  -moz-animation: grad 50s ease infinite;
+  -o-animation: grad 50s ease infinite;
+  animation: grad 50s ease infinite;
+}
+@-webkit-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(165, 165, 165);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 80, 80);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(48, 48, 48);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(24, 24, 24);
+}

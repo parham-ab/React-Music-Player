@@ -1,0 +1,29 @@
+.musicPlayer {
+  .icons-container {
+    svg {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+  input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 15rem;
+    background-color: #b1b1b1;
+    appearance: none;
+    height: 4px;
+    border-radius: 10px;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: #18682c;
+      height: 0.9rem;
+      width: 0.9rem;
+      border-radius: 100%;
+    }
+  }
+  .time {
+    font-size: 0.8rem;
+  }
+}
